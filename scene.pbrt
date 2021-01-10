@@ -1,0 +1,33 @@
+Include "camera.pbrt"
+Include "film.pbrt"
+
+Camera "perspective" "float fov" 70
+
+Sampler "halton" "integer pixelsamples" 14
+
+Integrator "path"
+
+WorldBegin
+
+
+# approximate the sun
+LightSource "distant"  "point from" [ -30 40  10 ]
+#   "rgb L" [1 1 1]
+
+
+AttributeBegin
+
+  Material "uber" 
+
+  "rgb Kd" [0 0 1]
+   #"rgb Ks" [1 1 1]
+     
+
+  #"float roughness" [ 0.00170708]
+
+  Shape "sphere" "float radius" 1
+
+AttributeEnd
+
+
+WorldEnd

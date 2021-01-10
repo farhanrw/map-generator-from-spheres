@@ -1,0 +1,16 @@
+*.png
+*.tar
+*.rar
+*.zip
+*.jpg
+*.jpeg
+*.pth
+data/
+data-all/
+data-new/
+images/
+images-all/
+images-new/
+maps/
+maps-new/
+submaps/
